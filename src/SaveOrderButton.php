@@ -3,7 +3,7 @@
  * @Author: ivan@pupupula.com
  * @Date: 2023-04-04 11:23:57
  * @LastEditors: ivan@pupupula.com
- * @LastEditTime: 2023-04-04 11:56:09
+ * @LastEditTime: 2023-04-04 17:43:38
  * @Description: 
  */
 
@@ -16,9 +16,13 @@ class SaveOrderButton extends AbstractTool
 {
     protected $sortColumn;
 
-    public function __construct($column)
+    protected $sortBy;
+
+    public function __construct($column = 'order', $sortBy = 'asc')
     {
         $this->sortColumn = $column;
+
+        $this->sortBy = $sortBy;
     }
 
     protected function script()
@@ -42,6 +46,7 @@ $('.grid-save-order-btn').click(function () {
             _token: Dcat.token,
             _model: '{$class}',
             _sort: $(this).data('sort'),
+            _sortBy: '{$this->sortBy}',
             _column: '{$this->sortColumn}',
         }
     }).done(function(data){

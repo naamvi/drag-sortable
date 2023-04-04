@@ -3,7 +3,7 @@
  * @Author: ivan@pupupula.com
  * @Date: 2023-04-04 11:18:23
  * @LastEditors: ivan@pupupula.com
- * @LastEditTime: 2023-04-04 13:15:15
+ * @LastEditTime: 2023-04-04 17:43:30
  * @Description: 
  */
 
@@ -31,13 +31,13 @@ class DragSortableServiceProvider extends ServiceProvider
 
         $column = $this->column;
 
-        Grid::macro('sortable', function ($sortName = null) use ($column) {
+        Grid::macro('sortable', function ($sortName = null, $sortBy = 'asc') use ($column) {
             if ($sortName === null) {
                 $sortName = $this->model()->repository()->model()->determineOrderColumnName();
             }
 
             /* @var $this Grid */
-            $this->tools(new SaveOrderButton($sortName));
+            $this->tools(new SaveOrderButton($sortName, $sortBy));
 
             if (!request()->has($sortName)) {
                 $this->model()->ordered();
