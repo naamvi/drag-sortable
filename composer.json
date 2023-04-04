@@ -4,19 +4,11 @@
     "description": "Drag and drop sorting of grid rows for Dcat-Admin 2.0",
     "type": "library",
     "keywords": ["dcat-admin", "extension"],
-    "homepage": "https://github.com/ivan/drag-sortable",
+    "homepage": "https://github.com/naamvi/drag-sortable",
     "license": "MIT",
     "authors": [
         {
-            "name": "jqh",
-            "email": "841324345@qq.com"
-        },
-        {
-            "name": "Paweł Bukowski",
-            "email": "bukowski@crazyit.pl"
-        },
-        {
-            "name": "ivan",
+            "name": "naamvi",
             "email": "138567565@qq.com"
         }
     ],
