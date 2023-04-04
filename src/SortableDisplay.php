@@ -3,7 +3,7 @@
  * @Author: ivan@pupupula.com
  * @Date: 2023-04-04 11:23:57
  * @LastEditors: ivan@pupupula.com
- * @LastEditTime: 2023-04-04 13:15:10
+ * @LastEditTime: 2023-04-04 16:03:56
  * @Description: 
  */
 
@@ -52,9 +52,8 @@ JS;
         $sort = $this->getRowSort($sortName);
 
         return <<<HTML
-<a class="grid-sortable-handle" style="cursor:move;white-space:nowrap;" data-key="{$key}" data-sort="{$sort}">
-   <i class="fa fa-ellipsis-v"></i>
-   <i class="fa fa-ellipsis-v"></i>
+<a class="grid-sortable-handle" style="font-size:16px;cursor:move;white-space:nowrap;" data-key="{$key}" data-sort="{$sort}">
+   <i class="feather icon-copy"></i>
 </a>
 HTML;
     }
