@@ -1,0 +1,40 @@
+{
+    "name": "ivan/drag-sortable",
+    "alias": "",
+    "description": "Drag and drop sorting of grid rows for Dcat-Admin 2.0",
+    "type": "library",
+    "keywords": ["dcat-admin", "extension"],
+    "homepage": "https://github.com/ivan/drag-sortable",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "jqh",
+            "email": "841324345@qq.com"
+        },
+        {
+            "name": "Paweł Bukowski",
+            "email": "bukowski@crazyit.pl"
+        },
+        {
+            "name": "ivan",
+            "email": "138567565@qq.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.1.0",
+        "dcat/laravel-admin": "~2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Ivan\\DragSortable\\": "src/"
+        }
+    },
+    "extra": {
+        "dcat-admin": "Ivan\\DragSortable\\DragSortableServiceProvider",
+        "laravel": {
+            "providers": [
+                "Ivan\\DragSortable\\DragSortableServiceProvider"
+            ]
+        }
+    }
+}
