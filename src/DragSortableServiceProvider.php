@@ -3,7 +3,7 @@
  * @Author: ivan@pupupula.com
  * @Date: 2023-04-04 11:18:23
  * @LastEditors: ivan@pupupula.com
- * @LastEditTime: 2023-04-04 11:48:30
+ * @LastEditTime: 2023-04-04 13:15:15
  * @Description: 
  */
 
@@ -15,7 +15,7 @@ use Dcat\Admin\Grid;
 class DragSortableServiceProvider extends ServiceProvider
 {
     protected $js = [
-        'vendor/dcat-admin-extensions/ivan/drag-sortable/js/sortable.min.js',
+        'js/sortable.min.js',
     ];
 	
     protected $column = '__sortable__';

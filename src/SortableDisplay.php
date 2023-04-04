@@ -3,7 +3,7 @@
  * @Author: ivan@pupupula.com
  * @Date: 2023-04-04 11:23:57
  * @LastEditors: ivan@pupupula.com
- * @LastEditTime: 2023-04-04 11:50:33
+ * @LastEditTime: 2023-04-04 13:15:10
  * @Description: 
  */
 
@@ -15,8 +15,7 @@ use Dcat\Admin\Grid\Displayers\AbstractDisplayer;
 class SortableDisplay extends AbstractDisplayer
 {
     protected static $js = [
-        'vendor/dcat-admin-extensions/ivan/drag-sortable/js/sortable.js',
-        'vendor/dcat-admin-extensions/ivan/drag-sortable/js/sortable.min.js',
+        '@naamvi.drag-sortable',
     ];
 
     protected function script()

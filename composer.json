@@ -1,7 +1,7 @@
 {
     "name": "naamvi/drag-sortable",
     "alias": "",
-    "description": "Drag and drop sorting of grid rows for Dcat-Admin 2.0",
+    "description": "拖拽排序 Copyright https://github.com/dcat-admin/grid-sortable",
     "type": "library",
     "keywords": ["dcat-admin", "extension"],
     "homepage": "https://github.com/naamvi/drag-sortable",
