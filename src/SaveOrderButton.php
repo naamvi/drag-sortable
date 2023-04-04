@@ -23,7 +23,7 @@ class SaveOrderButton extends AbstractTool
 
     protected function script()
     {
-        $route = admin_base_path('ivan-drag-sortable');
+        $route = admin_base_path('naamvi-drag-sortable');
         $model = $this->parent->model()->repository()->model();
         $class = get_class($model);
         $class = str_replace('\\', '\\\\', $class);
@@ -70,7 +70,7 @@ JS;
 
         return <<<HTML
 <button type="button" class="btn btn-white grid-save-order-btn" style="margin-left:0px;display:none;">
-    <i class="fa fa-save"></i><span class="hidden-xs">&nbsp;&nbsp;{$text}</span>
+    <i class="feather icon-refresh-cw"></i><span class="hidden-xs">&nbsp;&nbsp;{$text}</span>
 </button>
 HTML;
     }
