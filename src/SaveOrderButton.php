@@ -3,7 +3,7 @@
  * @Author: ivan@pupupula.com
  * @Date: 2023-04-04 11:23:57
  * @LastEditors: ivan@pupupula.com
- * @LastEditTime: 2023-04-04 17:43:38
+ * @LastEditTime: 2023-04-06 19:12:18
  * @Description: 
  */
 
@@ -27,11 +27,10 @@ class SaveOrderButton extends AbstractTool
 
     protected function script()
     {
-        $route = admin_base_path('naamvi-drag-sortable');
+        $route = admin_base_path('extension/grid-drag-sortable');
         $model = $this->parent->model()->repository()->model();
         $class = get_class($model);
         $class = str_replace('\\', '\\\\', $class);
-
         
         $script = <<<JS
 
